@@ -1,31 +1,102 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('https://images.pexels.com/photos/2828555/pexels-photo-2828555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sunny{
+  background-image: url('../public/sunny.jpeg');
+}
+.cloud{
+  background-image: url('../public/cloud.webp');
+}
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.same{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5rem;
+  font-size: 1.5rem;
   color: white;
+  text-shadow: 1px 1px 10px black;
+}
+.search-box{
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.btn{
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  color: green;
+  cursor: pointer;
+  border-bottom: 3px solid yellowgreen;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
-.App-link {
-  color: #61dafb;
+header input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border-bottom: 3px solid #df8e00;
+  color: #df8e00;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
-.heart {
-  color: #ff0000;
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+header input:hover{
+  box-shadow: 1px 1px 5px 1px #df8e00;
+}
+.btn:hover{
+  box-shadow: 1px 1px 5px 1px yellowgreen;
 }
 
-.small {
-  font-size: 0.75rem;
+.container{
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.location, .system{
+  margin-top: 3rem;
+}
+.current{
+  flex-direction: column;
+  gap: 5rem;
+}
+.temp{
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  padding: 0.7rem;
+}
+.current div{
+  margin-left: 5rem;
+}
+.weather{
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px black;
+  color: white;
 }

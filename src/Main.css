@@ -1,0 +1,51 @@
+.section {
+    padding: 5rem 0;
+}
+h2.section-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #40407a;
+}
+h2.section-head:after{
+    background-color: #ff5252;
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+#banner {
+    background: url('https://images.pexels.com/photos/3016353/pexels-photo-3016353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.banner-title h1{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.banner-title p.lead{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i.bx{
+    font-size: 4rem;
+    color: #34ace0;
+    margin: 1.5rem 0;
+}
+.service-box h3{
+    color: #ff5252;
+}
+
+#testimonial {
+    background-color: #aaa69d;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-shadow: 5px 5px 10px black;
+}

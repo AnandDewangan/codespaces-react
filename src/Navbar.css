@@ -1,0 +1,15 @@
+#header {
+    background: #ffb142;
+}
+#logo {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding: 1rem 0;
+}
+.btn-group a{
+    color: white;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
